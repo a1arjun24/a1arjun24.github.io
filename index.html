@@ -5,19 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <meta name="description" content="Unit 17 — Independent software studio from Ottawa, Canada. We build apps, games, and tools with intention.">
 <title>Unit 17 — Ottawa, Canada</title>
- 
+
 <!-- Open Graph -->
 <meta property="og:title" content="Unit 17 — Ottawa, Canada">
 <meta property="og:description" content="Independent software studio. We ship apps, games, and tools built with intention.">
 <meta property="og:url" content="https://unit17.ca">
 <meta property="og:image" content="https://unit17.ca/logo.png">
 <meta property="og:type" content="website">
- 
+
 <link rel="icon" type="image/png" href="logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- 
+
   :root {
     --bg: #07090c;
     --bg2: #0c1015;
@@ -38,9 +38,9 @@
     --accent2-soft: rgba(255,107,53,0.10);
     --grain-opacity: 0.025;
   }
- 
+
   html { scroll-behavior: smooth; }
- 
+
   body {
     font-family: 'DM Sans', sans-serif;
     background: var(--bg);
@@ -51,7 +51,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
- 
+
   /* Grain */
   body::before {
     content: '';
@@ -63,7 +63,7 @@
     opacity: var(--grain-opacity);
     mix-blend-mode: overlay;
   }
- 
+
   /* Subtle vignette */
   body::after {
     content: '';
@@ -73,7 +73,7 @@
     pointer-events: none;
     z-index: 1;
   }
- 
+
   /* ============================================ */
   /* NAV                                          */
   /* ============================================ */
@@ -92,11 +92,11 @@
     border-bottom: 1px solid var(--border);
     transition: border-color 0.3s ease;
   }
- 
+
   nav.scrolled {
     border-bottom-color: var(--border-bright);
   }
- 
+
   .nav-logo {
     display: flex;
     align-items: center;
@@ -106,7 +106,7 @@
     transition: opacity 0.2s;
   }
   .nav-logo:hover { opacity: 0.85; }
- 
+
   .nav-logo img {
     height: 38px;
     width: 38px;
@@ -114,7 +114,7 @@
     object-fit: cover;
     display: block;
   }
- 
+
   .nav-wordmark {
     font-family: 'Syne', sans-serif;
     font-weight: 700;
@@ -131,14 +131,14 @@
     color: var(--accent);
     margin: 0 1px;
   }
- 
+
   .nav-links {
     display: flex;
     align-items: center;
     gap: 36px;
     list-style: none;
   }
- 
+
   .nav-links a {
     font-family: 'DM Mono', monospace;
     font-size: 12px;
@@ -150,7 +150,7 @@
     white-space: nowrap;
     position: relative;
   }
- 
+
   .nav-links a::after {
     content: '';
     position: absolute;
@@ -165,7 +165,7 @@
   }
   .nav-links a:hover { color: var(--text); }
   .nav-links a:hover::after { transform: scaleX(1); }
- 
+
   .nav-cta {
     font-family: 'DM Mono', monospace;
     font-size: 11px;
@@ -183,7 +183,7 @@
     background: var(--text) !important;
     transform: translateY(-1px);
   }
- 
+
   /* Hamburger */
   .nav-hamburger {
     display: none;
@@ -203,7 +203,7 @@
     border-radius: 2px;
     transition: all 0.25s;
   }
- 
+
   .nav-drawer {
     display: none;
     position: fixed;
@@ -233,7 +233,7 @@
     color: var(--bg) !important;
     padding: 11px 22px;
   }
- 
+
   /* ============================================ */
   /* HERO                                         */
   /* ============================================ */
@@ -247,7 +247,7 @@
     overflow: hidden;
     z-index: 2;
   }
- 
+
   /* Subtle grid backdrop */
   .hero::before {
     content: '';
@@ -261,7 +261,7 @@
     mask-image: radial-gradient(ellipse 70% 70% at 30% 50%, black 30%, transparent 100%);
     -webkit-mask-image: radial-gradient(ellipse 70% 70% at 30% 50%, black 30%, transparent 100%);
   }
- 
+
   .hero-glow {
     position: absolute;
     width: 700px;
@@ -273,7 +273,7 @@
     pointer-events: none;
     filter: blur(20px);
   }
- 
+
   .hero-glow2 {
     position: absolute;
     width: 500px;
@@ -285,7 +285,7 @@
     pointer-events: none;
     filter: blur(20px);
   }
- 
+
   /* Maker's mark — large watermark logo bottom-right */
   .hero-watermark {
     position: absolute;
@@ -302,14 +302,14 @@
     filter: blur(0.5px);
     z-index: 1;
   }
- 
+
   .hero-content {
     position: relative;
     z-index: 3;
     max-width: 1200px;
     width: 100%;
   }
- 
+
   .hero-tag {
     display: inline-flex;
     align-items: center;
@@ -323,7 +323,7 @@
     opacity: 0;
     animation: fadeUp 0.6s ease 0.1s forwards;
   }
- 
+
   .hero-tag::before {
     content: '';
     width: 32px;
@@ -331,7 +331,7 @@
     background: var(--accent);
     flex-shrink: 0;
   }
- 
+
   .hero-tag::after {
     content: '';
     width: 6px;
@@ -341,7 +341,7 @@
     box-shadow: 0 0 12px var(--accent3);
     animation: pulse 2s ease infinite;
   }
- 
+
   h1 {
     font-family: 'Syne', sans-serif;
     font-weight: 800;
@@ -354,11 +354,11 @@
     opacity: 0;
     animation: fadeUp 0.7s ease 0.2s forwards;
   }
- 
+
   h1 .accent { color: var(--accent); }
   h1 .accent2 { color: var(--accent2); }
   h1 .italic { font-style: italic; font-weight: 500; }
- 
+
   .hero-sub {
     font-size: 19px;
     color: var(--text-mid);
@@ -369,7 +369,7 @@
     opacity: 0;
     animation: fadeUp 0.7s ease 0.35s forwards;
   }
- 
+
   .hero-actions {
     display: flex;
     gap: 14px;
@@ -378,7 +378,7 @@
     opacity: 0;
     animation: fadeUp 0.7s ease 0.45s forwards;
   }
- 
+
   .btn-primary {
     font-family: 'DM Mono', monospace;
     font-size: 12px;
@@ -404,7 +404,7 @@
   }
   .btn-primary .arrow { transition: transform 0.2s; }
   .btn-primary:hover .arrow { transform: translateX(3px); }
- 
+
   .btn-secondary {
     font-family: 'DM Mono', monospace;
     font-size: 12px;
@@ -429,7 +429,7 @@
     border-color: var(--border-strong);
     background: rgba(255,255,255,0.02);
   }
- 
+
   .hero-meta {
     position: absolute;
     bottom: 100px;
@@ -442,7 +442,7 @@
     opacity: 0;
     animation: fadeUp 0.7s ease 0.7s forwards;
   }
- 
+
   .hero-coords {
     font-family: 'DM Mono', monospace;
     font-size: 11px;
@@ -458,18 +458,18 @@
     display: block;
     margin-bottom: 4px;
   }
- 
+
   .hero-stats {
     display: flex;
     gap: 56px;
     flex-wrap: wrap;
     justify-content: flex-end;
   }
- 
+
   .stat {
     text-align: right;
   }
- 
+
   .stat-num {
     font-family: 'Syne', sans-serif;
     font-weight: 700;
@@ -479,11 +479,11 @@
     line-height: 1;
     margin-bottom: 6px;
   }
- 
+
   .stat-num .accent { color: var(--accent); }
   .stat-num .accent2 { color: var(--accent2); }
   .stat-num .accent3 { color: var(--accent3); }
- 
+
   .stat-label {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
@@ -491,7 +491,7 @@
     letter-spacing: 0.12em;
     text-transform: uppercase;
   }
- 
+
   /* ============================================ */
   /* SECTION DEFAULTS                             */
   /* ============================================ */
@@ -500,12 +500,12 @@
     position: relative;
     z-index: 2;
   }
- 
+
   .section-head {
     margin-bottom: 80px;
     max-width: 720px;
   }
- 
+
   .section-tag {
     font-family: 'DM Mono', monospace;
     font-size: 11px;
@@ -523,7 +523,7 @@
     height: 1px;
     background: var(--accent);
   }
- 
+
   h2 {
     font-family: 'Syne', sans-serif;
     font-weight: 700;
@@ -533,9 +533,9 @@
     color: var(--text);
     margin-bottom: 24px;
   }
- 
+
   h2 .italic { font-style: italic; font-weight: 500; color: var(--text-mid); }
- 
+
   .section-sub {
     font-size: 17px;
     color: var(--text-mid);
@@ -543,12 +543,12 @@
     font-weight: 300;
     line-height: 1.65;
   }
- 
+
   /* ============================================ */
   /* PRODUCTS — Premium Showcase                  */
   /* ============================================ */
   .products { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
- 
+
   .products-stack {
     display: flex;
     flex-direction: column;
@@ -556,7 +556,7 @@
     max-width: 1400px;
     margin: 0 auto;
   }
- 
+
   .product-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -568,12 +568,12 @@
     transition: border-color 0.3s ease, transform 0.3s ease;
     position: relative;
   }
- 
+
   .product-row:hover {
     border-color: var(--border-bright);
     transform: translateY(-2px);
   }
- 
+
   .product-row::before {
     content: '';
     position: absolute;
@@ -587,14 +587,14 @@
   .product-row:hover::before { transform: scaleX(1); }
   .product-row.orange::before { background: var(--accent2); }
   .product-row.green::before { background: var(--accent3); }
- 
+
   /* Reverse layout on every other row */
   .product-row.reverse {
     grid-template-columns: 1fr 1fr;
   }
   .product-row.reverse .product-visual { order: 2; }
   .product-row.reverse .product-content { order: 1; }
- 
+
   /* VISUAL SIDE */
   .product-visual {
     background: var(--surface);
@@ -606,7 +606,7 @@
     overflow: hidden;
     min-height: 380px;
   }
- 
+
   .product-visual::before {
     content: '';
     position: absolute;
@@ -616,19 +616,19 @@
       radial-gradient(circle at 70% 70%, rgba(0,212,255,0.04) 0%, transparent 60%);
     pointer-events: none;
   }
- 
+
   .product-row.orange .product-visual::before {
     background:
       radial-gradient(circle at 30% 40%, var(--accent2-soft) 0%, transparent 60%),
       radial-gradient(circle at 70% 70%, rgba(255,107,53,0.04) 0%, transparent 60%);
   }
- 
+
   .product-row.green .product-visual::before {
     background:
       radial-gradient(circle at 30% 40%, rgba(127,255,107,0.08) 0%, transparent 60%),
       radial-gradient(circle at 70% 70%, rgba(127,255,107,0.04) 0%, transparent 60%);
   }
- 
+
   /* Tech grid pattern overlay */
   .product-visual::after {
     content: '';
@@ -640,17 +640,17 @@
     background-size: 32px 32px;
     pointer-events: none;
   }
- 
+
   .product-logo-wrap {
     position: relative;
     z-index: 2;
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
- 
+
   .product-row:hover .product-logo-wrap {
     transform: scale(1.04);
   }
- 
+
   .product-logo-wrap img {
     max-width: 220px;
     max-height: 220px;
@@ -663,7 +663,7 @@
       0 0 0 1px rgba(255,255,255,0.04),
       inset 0 1px 0 rgba(255,255,255,0.06);
   }
- 
+
   /* CONTENT SIDE */
   .product-content {
     padding: 56px 56px;
@@ -671,7 +671,7 @@
     flex-direction: column;
     justify-content: center;
   }
- 
+
   .product-label {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
@@ -683,7 +683,7 @@
     align-items: center;
     gap: 8px;
   }
- 
+
   .product-label .dot {
     width: 6px;
     height: 6px;
@@ -693,12 +693,12 @@
     animation: pulse 2s ease infinite;
     flex-shrink: 0;
   }
- 
+
   .product-row.orange .product-label { color: var(--accent2); }
   .product-row.orange .product-label .dot { background: var(--accent2); }
   .product-row.green .product-label { color: var(--accent3); }
   .product-row.green .product-label .dot { background: var(--accent3); animation: none; }
- 
+
   .product-name {
     font-family: 'Syne', sans-serif;
     font-weight: 700;
@@ -708,7 +708,7 @@
     margin-bottom: 16px;
     line-height: 1.05;
   }
- 
+
   .product-desc {
     font-size: 15px;
     color: var(--text-mid);
@@ -717,14 +717,14 @@
     margin-bottom: 28px;
     max-width: 460px;
   }
- 
+
   .product-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 7px;
     margin-bottom: 32px;
   }
- 
+
   .tag {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
@@ -736,7 +736,7 @@
     border-radius: 3px;
     text-transform: uppercase;
   }
- 
+
   .product-link {
     font-family: 'DM Mono', monospace;
     font-size: 12px;
@@ -753,7 +753,7 @@
   .product-link:hover { gap: 14px; }
   .product-row.orange .product-link { color: var(--accent2); }
   .product-row.green .product-link { color: var(--accent3); }
- 
+
   /* Sub-product within a card (used for Kray Kray's 6-7 Game and Seedling's two grades) */
   .sub-product {
     margin-top: 24px;
@@ -771,11 +771,11 @@
     background: rgba(255,255,255,0.04);
     border-color: var(--border-bright);
   }
- 
+
   .sub-product + .sub-product { margin-top: 10px; }
- 
+
   .sub-product-info { flex: 1; min-width: 0; }
- 
+
   .sub-product-label {
     font-family: 'DM Mono', monospace;
     font-size: 9px;
@@ -784,7 +784,7 @@
     color: var(--text-muted);
     margin-bottom: 4px;
   }
- 
+
   .sub-product-name {
     font-family: 'Syne', sans-serif;
     font-weight: 600;
@@ -793,14 +793,14 @@
     line-height: 1.2;
     margin-bottom: 3px;
   }
- 
+
   .sub-product-desc {
     font-size: 12px;
     color: var(--text-muted);
     line-height: 1.5;
     font-weight: 300;
   }
- 
+
   .sub-product-link {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
@@ -816,18 +816,18 @@
   }
   .sub-product-link:hover { gap: 9px; }
   .product-row.green .sub-product-link { color: var(--accent3); }
- 
+
   /* ============================================ */
   /* IN DEVELOPMENT                               */
   /* ============================================ */
   .in-dev { background: var(--bg); }
- 
+
   .in-dev-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 16px;
   }
- 
+
   .in-dev-card {
     padding: 36px 32px;
     border: 1px solid var(--border);
@@ -837,13 +837,13 @@
     overflow: hidden;
     transition: border-color 0.25s, background 0.25s, transform 0.25s;
   }
- 
+
   .in-dev-card:hover {
     border-color: var(--border-bright);
     background: var(--bg3);
     transform: translateY(-3px);
   }
- 
+
   .in-dev-card::before {
     content: '';
     position: absolute;
@@ -852,10 +852,10 @@
     background: linear-gradient(90deg, transparent, var(--accent2), transparent);
     opacity: 0.5;
   }
- 
+
   .in-dev-card.blue::before { background: linear-gradient(90deg, transparent, var(--accent), transparent); }
   .in-dev-card.green::before { background: linear-gradient(90deg, transparent, var(--accent3), transparent); }
- 
+
   .dev-badge {
     display: inline-flex;
     align-items: center;
@@ -871,7 +871,7 @@
     border-radius: 20px;
     margin-bottom: 20px;
   }
- 
+
   .dev-badge::before {
     content: '';
     width: 5px;
@@ -880,7 +880,7 @@
     background: currentColor;
     animation: pulse 1.5s ease infinite;
   }
- 
+
   .in-dev-name {
     font-family: 'Syne', sans-serif;
     font-weight: 700;
@@ -890,7 +890,7 @@
     margin-bottom: 8px;
     line-height: 1.1;
   }
- 
+
   .in-dev-year {
     font-family: 'DM Mono', monospace;
     font-size: 11px;
@@ -899,19 +899,19 @@
     text-transform: uppercase;
     margin-bottom: 18px;
   }
- 
+
   .in-dev-desc {
     font-size: 14px;
     color: var(--text-mid);
     line-height: 1.65;
     font-weight: 300;
   }
- 
+
   /* ============================================ */
   /* ABOUT                                        */
   /* ============================================ */
   .about { background: var(--bg2); }
- 
+
   .about-grid {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -920,7 +920,7 @@
     max-width: 1300px;
     margin: 0 auto;
   }
- 
+
   .about-text p {
     font-size: 17px;
     color: var(--text-mid);
@@ -929,14 +929,14 @@
     margin-bottom: 24px;
     max-width: 580px;
   }
- 
+
   .about-text p strong {
     color: var(--text);
     font-weight: 500;
   }
- 
+
   .about-text p:last-of-type { margin-bottom: 0; }
- 
+
   .about-details {
     display: flex;
     flex-direction: column;
@@ -946,7 +946,7 @@
     border-radius: 12px;
     overflow: hidden;
   }
- 
+
   .detail-row {
     display: flex;
     justify-content: space-between;
@@ -957,7 +957,7 @@
     transition: background 0.2s;
   }
   .detail-row:hover { background: var(--surface); }
- 
+
   .detail-label {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
@@ -966,23 +966,23 @@
     text-transform: uppercase;
     flex-shrink: 0;
   }
- 
+
   .detail-value {
     font-family: 'DM Mono', monospace;
     font-size: 12px;
     color: var(--text);
     text-align: right;
   }
- 
+
   .detail-value .accent { color: var(--accent); }
   .detail-value .accent2 { color: var(--accent2); }
   .detail-value .accent3 { color: var(--accent3); }
- 
+
   /* ============================================ */
   /* PRINCIPLES                                   */
   /* ============================================ */
   .principles { background: var(--bg); }
- 
+
   .principles-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -992,18 +992,18 @@
     border-radius: 12px;
     overflow: hidden;
   }
- 
+
   .principle-card {
     padding: 40px 36px;
     background: var(--bg2);
     transition: background 0.25s;
     position: relative;
   }
- 
+
   .principle-card:hover {
     background: var(--bg3);
   }
- 
+
   .principle-num {
     font-family: 'Syne', sans-serif;
     font-weight: 800;
@@ -1015,14 +1015,14 @@
     align-items: center;
     gap: 8px;
   }
- 
+
   .principle-num::after {
     content: '';
     flex: 1;
     height: 1px;
     background: var(--border-bright);
   }
- 
+
   .principle-title {
     font-family: 'Syne', sans-serif;
     font-weight: 700;
@@ -1032,29 +1032,29 @@
     letter-spacing: -0.015em;
     line-height: 1.15;
   }
- 
+
   .principle-desc {
     font-size: 14px;
     color: var(--text-mid);
     line-height: 1.7;
     font-weight: 300;
   }
- 
+
   /* ============================================ */
   /* MERCH                                        */
   /* ============================================ */
   .merch { background: var(--bg2); }
- 
+
   .merch-inner {
     text-align: center;
     max-width: 880px;
     margin: 0 auto;
   }
- 
+
   .merch-inner .section-tag { justify-content: center; }
   .merch-inner h2 { margin-bottom: 24px; }
   .merch-inner .section-sub { margin: 0 auto 56px; }
- 
+
   .merch-preview {
     position: relative;
     margin: 0 auto 48px;
@@ -1065,19 +1065,19 @@
       0 0 100px rgba(0,212,255,0.05),
       0 30px 60px rgba(0,0,0,0.5);
   }
- 
+
   .merch-preview img {
     width: 100%;
     display: block;
   }
- 
+
   .merch-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(to top, rgba(7,9,12,0.6) 0%, transparent 50%);
     pointer-events: none;
   }
- 
+
   .merch-badge {
     display: inline-block;
     background: var(--surface);
@@ -1086,7 +1086,7 @@
     padding: 24px 44px;
     margin-bottom: 28px;
   }
- 
+
   .merch-badge .label {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
@@ -1095,7 +1095,7 @@
     margin-bottom: 10px;
     text-transform: uppercase;
   }
- 
+
   .merch-badge .name {
     font-family: 'Syne', sans-serif;
     font-size: 20px;
@@ -1104,13 +1104,13 @@
     margin-bottom: 8px;
     letter-spacing: -0.015em;
   }
- 
+
   .merch-badge .desc {
     font-size: 14px;
     color: var(--text-mid);
     font-weight: 300;
   }
- 
+
   .merch-waitlist {
     display: inline-block;
     font-family: 'DM Mono', monospace;
@@ -1124,22 +1124,22 @@
     transition: border-color 0.2s;
   }
   .merch-waitlist:hover { border-bottom-color: var(--accent); }
- 
+
   /* ============================================ */
   /* CONTACT                                      */
   /* ============================================ */
   .contact { background: var(--bg); }
- 
+
   .contact-inner {
     max-width: 720px;
     margin: 0 auto;
     text-align: center;
   }
- 
+
   .contact-inner .section-tag { justify-content: center; }
   .contact-inner h2 { margin: 0 0 24px; }
   .contact-inner .section-sub { margin: 0 auto 56px; }
- 
+
   .contact-email {
     font-family: 'Syne', sans-serif;
     font-weight: 600;
@@ -1158,7 +1158,7 @@
     color: var(--accent);
     border-bottom-color: var(--accent);
   }
- 
+
   /* ============================================ */
   /* FOOTER                                       */
   /* ============================================ */
@@ -1169,7 +1169,7 @@
     position: relative;
     z-index: 2;
   }
- 
+
   .footer-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
@@ -1177,13 +1177,13 @@
     margin-bottom: 56px;
     max-width: 1400px;
   }
- 
+
   .footer-brand .nav-logo {
     margin-bottom: 20px;
   }
   .footer-brand .nav-logo img { height: 42px; width: 42px; border-radius: 8px; }
   .footer-brand .nav-wordmark { font-size: 18px; }
- 
+
   .footer-brand p {
     font-size: 13px;
     color: var(--text-muted);
@@ -1191,7 +1191,7 @@
     font-weight: 300;
     max-width: 320px;
   }
- 
+
   .footer-col h4 {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
@@ -1201,14 +1201,14 @@
     margin-bottom: 20px;
     font-weight: 500;
   }
- 
+
   .footer-col ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 12px;
   }
- 
+
   .footer-col a {
     font-family: 'DM Mono', monospace;
     font-size: 12px;
@@ -1218,7 +1218,7 @@
     transition: color 0.2s;
   }
   .footer-col a:hover { color: var(--accent); }
- 
+
   .footer-bottom {
     border-top: 1px solid var(--border);
     padding-top: 24px;
@@ -1228,14 +1228,14 @@
     flex-wrap: wrap;
     gap: 16px;
   }
- 
+
   .footer-copy {
     font-family: 'DM Mono', monospace;
     font-size: 11px;
     color: var(--text-dim);
     letter-spacing: 0.06em;
   }
- 
+
   .footer-status {
     font-family: 'DM Mono', monospace;
     font-size: 11px;
@@ -1245,7 +1245,7 @@
     align-items: center;
     gap: 8px;
   }
- 
+
   .footer-status .dot {
     width: 6px;
     height: 6px;
@@ -1254,7 +1254,7 @@
     box-shadow: 0 0 10px var(--accent3);
     animation: pulse 2s ease infinite;
   }
- 
+
   /* ============================================ */
   /* DIVIDER                                      */
   /* ============================================ */
@@ -1263,7 +1263,7 @@
     background: var(--border);
     margin: 0 48px;
   }
- 
+
   /* ============================================ */
   /* ANIMATIONS                                   */
   /* ============================================ */
@@ -1271,12 +1271,12 @@
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
- 
+
   @keyframes pulse {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.3; }
   }
- 
+
   /* ============================================ */
   /* RESPONSIVE                                   */
   /* ============================================ */
@@ -1293,19 +1293,19 @@
     .about-grid { grid-template-columns: 1fr; gap: 56px; }
     .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
   }
- 
+
   @media (max-width: 768px) {
     nav { padding: 0 20px; height: 64px; }
     .nav-links { display: none; }
     .nav-wordmark { font-size: 14px; }
     .nav-hamburger { display: flex; }
     .nav-drawer { top: 64px; }
- 
+
     .hero {
       padding: 100px 20px 200px;
       min-height: 100svh;
     }
- 
+
     .hero-meta {
       position: relative;
       bottom: auto;
@@ -1317,11 +1317,11 @@
       margin-top: 64px;
       padding: 0;
     }
- 
+
     .hero-stats { gap: 32px; justify-content: flex-start; }
     .stat { text-align: left; }
     .stat-num { font-size: 28px; }
- 
+
     .hero-watermark {
       width: 200px;
       height: 200px;
@@ -1329,28 +1329,28 @@
       right: -60px;
       opacity: 0.04;
     }
- 
+
     section { padding: 80px 20px; }
     .divider { margin: 0 20px; }
     .section-head { margin-bottom: 56px; }
- 
+
     .product-visual { padding: 40px 24px; min-height: 240px; }
     .product-logo-wrap img { max-width: 140px; max-height: 140px; }
     .product-content { padding: 36px 28px; }
     .product-name { font-size: 26px; }
- 
+
     footer { padding: 56px 20px 32px; }
     .footer-grid { grid-template-columns: 1fr; gap: 40px; margin-bottom: 40px; }
     .footer-bottom { flex-direction: column; align-items: flex-start; }
- 
+
     .in-dev-grid { grid-template-columns: 1fr; }
     .principles-grid { grid-template-columns: 1fr; }
- 
+
     .merch-badge { padding: 20px 28px; }
- 
+
     .hero-sub { font-size: 16px; }
   }
- 
+
   @media (max-width: 480px) {
     h1 { font-size: clamp(40px, 11vw, 60px); }
     .hero-actions { flex-direction: column; align-items: stretch; }
@@ -1360,7 +1360,7 @@
 </style>
 </head>
 <body>
- 
+
 <!-- NAV -->
 <nav id="mainNav">
   <a href="#" class="nav-logo">
@@ -1379,7 +1379,7 @@
     <span></span><span></span><span></span>
   </button>
 </nav>
- 
+
 <!-- Mobile Drawer -->
 <nav class="nav-drawer" id="navDrawer">
   <a href="#products" onclick="closeMenu()">Products</a>
@@ -1389,36 +1389,36 @@
   <a href="#merch" onclick="closeMenu()">Merch</a>
   <a href="#contact" class="nav-cta" onclick="closeMenu()">Get in touch</a>
 </nav>
- 
+
 <!-- HERO -->
 <section class="hero">
   <div class="hero-glow"></div>
   <div class="hero-glow2"></div>
   <div class="hero-watermark"></div>
- 
+
   <div class="hero-content">
     <div class="hero-tag">Ottawa, Canada &nbsp;·&nbsp; Est. 2026</div>
- 
+
     <h1>
       We build<br>things <span class="italic accent">that matter</span>.
     </h1>
- 
+
     <p class="hero-sub">
       Unit 17 is an independent software studio. We ship apps, games, and tools built with intention — for people who demand more from their software.
     </p>
- 
+
     <div class="hero-actions">
       <a href="#products" class="btn-primary">See our work <span class="arrow">→</span></a>
       <a href="#about" class="btn-secondary">About the studio</a>
     </div>
   </div>
- 
+
   <div class="hero-meta">
     <div class="hero-coords">
       <span class="label">Coordinates</span>
       45.4215° N · 75.6972° W
     </div>
- 
+
     <div class="hero-stats">
       <div class="stat">
         <div class="stat-num">2<span class="accent">+</span></div>
@@ -1439,7 +1439,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- PRODUCTS -->
 <section class="products" id="products">
   <div class="section-head">
@@ -1447,9 +1447,9 @@
     <h2>Our products.<br><span class="italic">Built with intention.</span></h2>
     <p class="section-sub">Each product solves a real problem, made with obsessive attention to craft. No filler. No noise.</p>
   </div>
- 
+
   <div class="products-stack">
- 
+
     <!-- ThreatPulse -->
     <div class="product-row">
       <div class="product-visual">
@@ -1470,7 +1470,7 @@
         <a href="https://unit17.ca/threatpulse/" class="product-link">View product <span>→</span></a>
       </div>
     </div>
- 
+
     <!-- Kray Kray Games -->
     <div class="product-row orange reverse">
       <div class="product-visual">
@@ -1488,7 +1488,7 @@
           <span class="tag">Games</span>
           <span class="tag">Family</span>
         </div>
- 
+
         <div class="sub-product">
           <div class="sub-product-info">
             <div class="sub-product-label">Latest release</div>
@@ -1499,7 +1499,7 @@
         </div>
       </div>
     </div>
- 
+
     <!-- Seedling -->
     <div class="product-row green">
       <div class="product-visual">
@@ -1516,7 +1516,7 @@
           <span class="tag">Education</span>
           <span class="tag">Kids</span>
         </div>
- 
+
         <div class="sub-product">
           <div class="sub-product-info">
             <div class="sub-product-label">Coming Q3 2026</div>
@@ -1525,7 +1525,7 @@
           </div>
           <span class="sub-product-link">Soon <span>→</span></span>
         </div>
- 
+
         <div class="sub-product">
           <div class="sub-product-info">
             <div class="sub-product-label">Coming Q4 2026</div>
@@ -1536,10 +1536,10 @@
         </div>
       </div>
     </div>
- 
+
   </div>
 </section>
- 
+
 <!-- IN DEVELOPMENT -->
 <section class="in-dev" id="in-dev">
   <div class="section-head">
@@ -1547,33 +1547,33 @@
     <h2>In development.</h2>
     <p class="section-sub">Active builds on the bench right now. Shipping when they're ready, not before.</p>
   </div>
- 
+
   <div class="in-dev-grid">
- 
+
     <div class="in-dev-card blue">
       <div class="dev-badge" style="color: var(--accent); background: var(--accent-soft); border-color: rgba(0,212,255,0.18);">Active development</div>
       <div class="in-dev-name">ThreatPulse v2</div>
       <div class="in-dev-year">Target · Late 2026</div>
       <p class="in-dev-desc">Deeper integrations, team dashboards, and expanded threat intelligence feeds. The next chapter for security professionals.</p>
     </div>
- 
+
     <div class="in-dev-card">
       <div class="dev-badge">Active development</div>
       <div class="in-dev-name">KKG Title #2</div>
       <div class="in-dev-year">Target · 2027</div>
       <p class="in-dev-desc">The second game from Kray Kray Games. Fast-paced, family-friendly, and built to get everyone off the couch.</p>
     </div>
- 
+
     <div class="in-dev-card green">
       <div class="dev-badge" style="color: var(--accent3); background: rgba(127,255,107,0.08); border-color: rgba(127,255,107,0.18);">Active development</div>
       <div class="in-dev-name">Seedling · Series Expansion</div>
       <div class="in-dev-year">Target · 2027</div>
       <p class="in-dev-desc">Bridging early foundations with deeper learning. Subject-specific modes designed in conversation with parents and teachers.</p>
     </div>
- 
+
   </div>
 </section>
- 
+
 <!-- ABOUT -->
 <section class="about" id="about">
   <div class="about-grid">
@@ -1584,7 +1584,7 @@
       <p>The name comes from the people who matter most. Every digit in 17 is someone in this family. That's not a gimmick — it's a reminder of <strong>who we're building for</strong>.</p>
       <p>From <strong>Al Ain, UAE</strong> to <strong>Cochin, India</strong> to <strong>Ottawa, Canada</strong> — a long road that shaped a very particular taste for things that are <strong>precise, purposeful, and a little unexpected</strong>.</p>
     </div>
- 
+
     <div class="about-details">
       <div class="detail-row">
         <span class="detail-label">Founded</span>
@@ -1617,7 +1617,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- PRINCIPLES -->
 <section class="principles" id="principles">
   <div class="section-head">
@@ -1625,7 +1625,7 @@
     <h2>Our principles.</h2>
     <p class="section-sub">Not a manifesto. Just how we think about building things.</p>
   </div>
- 
+
   <div class="principles-grid">
     <div class="principle-card">
       <div class="principle-num">01</div>
@@ -1649,19 +1649,19 @@
     </div>
   </div>
 </section>
- 
+
 <!-- MERCH -->
 <section class="merch" id="merch">
   <div class="merch-inner">
     <div class="section-tag">Wear the brand</div>
     <h2>Unit 17 Merch.</h2>
     <p class="section-sub">Because some things are worth wearing. Hoodies, tees, and gear for people who build — and those who appreciate the craft.</p>
- 
+
     <div class="merch-preview">
       <img src="merch_mockup.PNG" alt="Unit 17 Merch — Hoodies, tees, accessories" />
       <div class="merch-overlay"></div>
     </div>
- 
+
     <div class="merch-badge">
       <div class="label">Coming soon</div>
       <div class="name">Drop 01 — Summer 2026</div>
@@ -1671,7 +1671,7 @@
     <a href="mailto:unit17studio@gmail.com?subject=Merch%20Waitlist" class="merch-waitlist">Join the waitlist →</a>
   </div>
 </section>
- 
+
 <!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="contact-inner">
@@ -1681,7 +1681,7 @@
     <a href="mailto:unit17studio@gmail.com" class="contact-email">unit17studio@gmail.com</a>
   </div>
 </section>
- 
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-grid">
@@ -1692,7 +1692,7 @@
       </a>
       <p>Independent software studio. Ottawa, Canada. Building apps, games, and tools with intention — one product at a time.</p>
     </div>
- 
+
     <div class="footer-col">
       <h4>Products</h4>
       <ul>
@@ -1701,7 +1701,7 @@
         <li><a href="#products">Seedling</a></li>
       </ul>
     </div>
- 
+
     <div class="footer-col">
       <h4>Studio</h4>
       <ul>
@@ -1711,7 +1711,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
- 
+
     <div class="footer-col">
       <h4>Legal</h4>
       <ul>
@@ -1720,13 +1720,13 @@
       </ul>
     </div>
   </div>
- 
+
   <div class="footer-bottom">
     <div class="footer-copy">© 2026 Unit 17 · Ottawa, Canada · All rights reserved</div>
     <div class="footer-status"><span class="dot"></span>Actively shipping</div>
   </div>
 </footer>
- 
+
 <script>
   function toggleMenu() {
     document.getElementById('navDrawer').classList.toggle('open');
@@ -1749,6 +1749,6 @@
     else nav.classList.remove('scrolled');
   });
 </script>
- 
+
 </body>
 </html>
